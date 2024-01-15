@@ -23,9 +23,3 @@ jobs:
         with:
           slackWebhookUrl: ${{ secrets.SLACK_NOTIFICATIONS_WEBHOOK }}
           releaseMessage: ${{ steps.slackify.outputs.text }}
-          #releaseMessage: ${{ github.event.release.body }}
-
-
-#  <!-- Release notes generated using configuration in .github/release.yml at v1.0.8 -->
-#
-#  ## What's Changed
