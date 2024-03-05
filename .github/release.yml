@@ -5,13 +5,15 @@ changelog:
     authors:
       - octocat
   categories:
-    - title: Layout and Design 🎨
+    - title: Highlights 🎉
       labels:
-        - layout
-    - title: New Features 🎉
+        - highlights
+    - title: New Content 🆕
       labels:
-        - feature
-        - enhancement
+        - new
+    - title: Added Content ➕
+      labels:
+        - added
     - title: Bug fixes 🐛
       labels:
         - bugfix
