@@ -7,7 +7,7 @@ changelog:
   categories:
     - title: Highlights 🎉
       labels:
-        - highlights
+        - highlight
     - title: New Content 🆕
       labels:
         - new
