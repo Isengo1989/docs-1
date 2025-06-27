@@ -67,3 +67,9 @@ To merge the upcoming changes of the `.htaccess` file we will use our already ex
 For the `.env` files we will make use of `.env.local` to be able to update the normal `.env` file. 
 
 The normal CLI update way will require a git repository to be initialised and uses the normal Symfony update flow.
+
+## Changes in the Project Setup and Deployment
+
+As part of the changes, the script name `watch:storefront` has been updated to `watch:frontend`. This change should be reflected in your project setup and deployment process. Please update any references to the `watch:storefront` script in your project to `watch:frontend`.
+
+This change is part of an ongoing effort to streamline and improve the Shopware development and deployment process. We appreciate your understanding and cooperation.
