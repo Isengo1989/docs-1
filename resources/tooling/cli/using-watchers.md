@@ -70,7 +70,7 @@ composer run watch:admin
 <Tab title="Storefront watcher">
 
 ```bash
-composer run watch:storefront
+composer run watch:frontend
 ```
 
 </Tab>
@@ -104,7 +104,7 @@ Using environment variables can also affect Shopware and, therefore, its watcher
 will run the command with the respective change. The following example will run the storefront watcher in production mode:
 
 ```bash
-APP_ENV=prod composer run watch:storefront
+APP_ENV=prod composer run watch:frontend
 ```
 
 #### APP_ENV
@@ -116,3 +116,7 @@ Storefront, while its counterpart `APP_ENV=prod` enables production mode and the
 
 Starting with NodeJS v17.0.0, it prefers IPv6 over IPv4. However, in some setups, IPv6 may cause problems when using watchers. In such
 cases, setting `IPV4FIRST=1` reverts this behavior.
+
+::: warning
+The command `watch:storefront` has been changed to `watch:frontend`. Please update your local development environments if you have been using the `watch:storefront` command.
+:::
