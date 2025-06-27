@@ -225,3 +225,7 @@ git commit -m "chore: switched back to main branch for meteor repo"
 ```
 
 Once the PR is merged, the production build will be triggered and the changes will be live on the Developer Portal.
+
+## Important Update
+
+As of PR [#22](https://github.com/shopware/developer-portal/pull/22), the command `watch:storefront` has been renamed to `watch:frontend`. Please update your local development environments if you have been using the `watch:storefront` command. Check if there are any scripts or tools that rely on the `watch:storefront` command and update the documentation for these if necessary.
