@@ -20,7 +20,7 @@ pnpm i
 We also want to create a new branch so we can test the integration first in the pull request, then merge it to the `main` branch and do production deployment.
 
 ```bash
-git checkout -b feature/embed-meteor-icon-kit
+git checkout -b feature/add-example2
 ```
 
 ### Docs CLI
@@ -57,9 +57,9 @@ Update `sections: SwagSectionsConfig[]` with all the regex matches for your sect
 const sections: SwagSectionsConfig[] = [
     // ...
     {
-        title: 'Meteor Icon Kit',
+        title: 'Example2',
         matches: [
-            '/resources/meteor-icon-kit/',
+            '/resources/example2/',
         ],
     },
 ];
@@ -75,11 +75,11 @@ You can do that by updating `const embeds: SwagEmbedsConfig[]`.
 const embeds: SwagEmbedsConfig[] = [
     // ...
     {
-        repository: 'meteor',
+        repository: 'example2',
         points: {
-            '/resources/meteor-icon-kit/': 'main',
+            '/resources/example2/': 'main',
         },
-        folder: 'packages/icon-kit/docs',
+        folder: 'packages/example2/docs',
     },
 ]
 ```
@@ -108,9 +108,9 @@ export default {
     async buildEnd() {
         // ...
         await copyAdditionalAssets([
-            // meteor-icon-kit
+            // example2
             {
-                src: './resources/meteor-icon-kit/public/icons/regular',
+                src: './resources/example2/public/icons/regular',
                 dst: 'icons/regular',
             }
         ])
@@ -126,17 +126,17 @@ The new repository must be activated in `.github/scripts/mount.sh`. This script 
 
 ```sh
 # ...
-BRANCH_METEOR_ICON_KIT=main
-ORG_METEOR_ICON_KIT=shopware
+BRANCH_EXAMPLE2=main
+ORG_EXAMPLE2=shopware
 
 # ...
 ./docs-cli.cjs clone \
  --ci \
- --repository shopware/meteor \
- --branch ${BRANCH_METEOR_ICON_KIT:-main} \
- --src packages/icon-kit/docs \
- --dst resources/meteor-icon-kit \
- --org ${ORG_METEOR_ICON_KIT:-shopware} \
+ --repository shopware/example2 \
+ --branch ${BRANCH_EXAMPLE2:-main} \
+ --src packages/example2/docs \
+ --dst resources/example2 \
+ --org ${ORG_EXAMPLE2:-shopware} \
  --root ../..
 ```
 
@@ -158,7 +158,7 @@ You will want to create at least 3 scripts in `package.json` of your repository
 * `docs:link` - Mount documentation from your repository into your local `developer-portal` instance.
 * `docs:preview` - Run Vitepress dev server from your local `developer-portal` instance.
 
-Examples are available in [meteor](https://github.com/shopware/meteor/blob/main/package.json) (monorepo setup), [frontends](https://github.com/shopware/frontends/blob/main/package.json), [release](https://github.com/shopware/release-notes/blob/main/package.json) and [docs](https://github.com/shopware/docs/blob/main/package.json) repositories (all standard repos).
+Examples are available in [example2](https://github.com/shopware/example2/blob/main/package.json) (monorepo setup), [frontends](https://github.com/shopware/frontends/blob/main/package.json), [release](https://github.com/shopware/release-notes/blob/main/package.json) and [docs](https://github.com/shopware/docs/blob/main/package.json) repositories (all standard repos).
 
 ```json
 {
@@ -188,21 +188,21 @@ Usually, you will want to first preview the docs from the feature branch of your
 For example, follow the instructions in the article above, and use the feature branch of your repository in production build.
 
 ```bash
-BRANCH_METEOR_ICON_KIT=feature/embed-meteor-repo-to-developer-portal
+BRANCH_EXAMPLE2=feature/add-example2
 ```
 
 ```shell
 cd /www/shopware/developer-portal/
-git checkout -b feature/embeds-meteor-icon-kit
+git checkout -b feature/add-example2
 # apply changes
-git commit -m "feat: embedded meteor repo"
+git commit -m "feat: embedded example2 repo"
 ```
 
 Make changes in your feature branch of your repository.
 
 ```shell
-cd /www/shopware/meteor/
-git checkout -b feature/embed-meteor-repo-to-developer-portal
+cd /www/shopware/example2/
+git checkout -b feature/add-example2
 # apply changes
 git commit -m "chore: updated shortcuts, set up pipeline for developer portal"
 ```
@@ -210,18 +210,18 @@ git commit -m "chore: updated shortcuts, set up pipeline for developer portal"
 Then create a PR and once the Vercel preview inside `developer-portal` is ready and correct, merge feature branch in your repository.
 
 ```shell
-cd /www/shopware/meteor/
+cd /www/shopware/example2/
 git checkout main
-git merge feature/embed-meteor-repo-to-developer-portal
+git merge feature/add-example2
 ```
 
 Now switch back production branch for your repository to `main` in the `developer-portal`.
 
 ```shell
 cd /www/shopware/developer-portal/
-git checkout feature/embeds-meteor-icon-kit
-# change BRANCH_METEOR_ICON_KIT=main inside .github/scripts/mount.sh
-git commit -m "chore: switched back to main branch for meteor repo"
+git checkout feature/add-example2
+# change BRANCH_EXAMPLE2=main inside .github/scripts/mount.sh
+git commit -m "chore: switched back to main branch for example2 repo"
 ```
 
 Once the PR is merged, the production build will be triggered and the changes will be live on the Developer Portal.
