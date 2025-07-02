@@ -102,3 +102,13 @@ This especially includes the following:
 All changes and possible breaks from the point of view of an app developer will be documented in separate `App System` sections inside the changelog and upgrade files.
 
 Additionally, the app system plugin will be deprecated after the migration process is finished and all further development will take place inside the platform.
+
+## Updates
+
+As part of the PR #24, the following changes have been made:
+
+- The `.github/workflows/visual-tests.yml` file has been modified. This may affect the way visual tests are run in the CI/CD pipeline.
+- Two new changelog files have been added, `2025-04-25-add-measurement-settings-into-sales-channel-configuration.md` and `2025-05-05-add-measurement-settings-into-sales-channel-domain-configuration.md`, documenting the addition of measurement settings into sales channel and domain configurations.
+- The `composer.json` and `src/Administration/Resources/app/administration/package.json` files have been modified. This may affect the dependencies and packages used in the project.
+
+Please refer to the PR details and code changes summary for more information.
