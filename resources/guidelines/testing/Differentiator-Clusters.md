@@ -12,6 +12,8 @@ This section will show you the new differentiator groups which needs to be fulfi
 
 * Cluster 4: Your app is based on the app system and offers meaningful use case that cannot be replicated with other comparable plugins.
 
+* Cluster 5: Your plugin or app offers a new measurement system feature that enhances the functionality of the Shopware platform.
+
 ## Examples of meaningful use of the Shopware standard
 
 * Uses custom fields instead of own tables. This facilitates data management and querying and avoids inconsistencies or conflicts with the Shopware data model.
@@ -24,6 +26,8 @@ This section will show you the new differentiator groups which needs to be fulfi
 
 * Precisely adapts to Shopware externally. This means that the plugin or app complements or extends the appearance of the Shopware admin interface without disturbing or altering it, by using the same styles and elements.
 
+* Implements a new measurement system feature. This means that the plugin or app enhances the functionality of the Shopware platform by offering a new measurement system feature.
+
 ## Examples of meaningful use cases that cannot be represented with other plugins or apps
 
 * Offers the possibility to send automatic emails to customers or partners to inform them about important information or offers.
@@ -34,6 +38,8 @@ This section will show you the new differentiator groups which needs to be fulfi
 
 * Offers different configurations for different sales channels.
 
+* Offers a new measurement system feature that cannot be replicated with other comparable plugins or apps.
+
 ## Examples of Shopware integrations
 
 * The plugin or app has meaningfully integrated the Rule Builder into the plugin or app.
@@ -43,3 +49,5 @@ This section will show you the new differentiator groups which needs to be fulfi
 * The plugin or app has meaningfully integrated the Shopware webhook integration into the plugin or app.
 
 * The plugin or app has meaningfully integrated the Flow Builder into the plugin or app.
+
+* The plugin or app has meaningfully integrated the new measurement system feature into the plugin or app.
