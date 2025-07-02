@@ -100,3 +100,19 @@ Here is a list of common reasons why we reject a pull request:
 
 To avoid a decline of the PR beforehand, create a new issue or discussion in the Shopware repository.
 Especially if you want to implement a new feature or change the behavior of an existing one.
+
+## Changes in the Configuration Files
+
+The configuration files have been updated to include new measurement settings in the sales channel configuration and domain configuration. This change is backward compatible and has been tested thoroughly.
+
+## Changes in the Build/Deployment Files
+
+The build and deployment files have been updated to reflect changes in the `.github/workflows/visual-tests.yml` and `composer.json` files. These changes ensure that the software is built and deployed correctly with the new features.
+
+## Changes in the Feature Flag System
+
+The feature flag system has been updated to include the new measurement settings feature. This change has been documented in the `2020-08-10-feature-flag-system.md` document.
+
+## Changes in the Infrastructure
+
+The infrastructure has been updated to accommodate the new features and changes. This includes changes in the `src/Administration/Resources/app/administration/package.json` file. These changes have been documented in the `2024-06-18-extended-event-system.md` document.
