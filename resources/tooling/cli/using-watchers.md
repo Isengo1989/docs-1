@@ -67,10 +67,10 @@ composer run watch:admin
 
 </Tab>
 
-<Tab title="Storefront watcher">
+<Tab title="Frontend watcher">
 
 ```bash
-composer run watch:storefront
+composer run watch:frontend
 ```
 
 </Tab>
@@ -89,10 +89,10 @@ To enable Hot Module Reloading, use the following shell scripts in the Shopware 
 
 </Tab>
 
-<Tab title="Storefront watcher">
+<Tab title="Frontend watcher">
 
 ```bash
-./bin/watch-storefront.sh
+./bin/watch-frontend.sh
 ```
 
 </Tab>
@@ -101,10 +101,10 @@ To enable Hot Module Reloading, use the following shell scripts in the Shopware 
 ### Environment variables
 
 Using environment variables can also affect Shopware and, therefore, its watchers. Like in Unix, prefixing command calls with a variable set
-will run the command with the respective change. The following example will run the storefront watcher in production mode:
+will run the command with the respective change. The following example will run the frontend watcher in production mode:
 
 ```bash
-APP_ENV=prod composer run watch:storefront
+APP_ENV=prod composer run watch:frontend
 ```
 
 #### APP_ENV
