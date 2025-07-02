@@ -1,10 +1,3 @@
----
-nav:
-  title: Add custom Javascript
-  position: 50
-
----
-
 # Add Custom Javascript
 
 ## Overview
@@ -251,7 +244,7 @@ To see your changes you have to build the Storefront. Use the following command 
 <Tab title="Template">
 
 ```bash
-./bin/build-storefront.sh
+./bin/build-frontend.sh
 ```
 
 </Tab>
