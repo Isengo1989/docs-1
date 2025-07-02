@@ -43,3 +43,14 @@ From now on, every new feature has to have a feature flag from the first merge i
 ## Counter decisions
 The way the flags now work is very lax. It doesn't prevent typos or lost code by itself. The developer have to be neat to be sure to use the correct flag name and find every occurrence of the flag while deleting it.
 Another possibility would be to provide the flags as php-classes. This attempt was discarded because of the overhead.
+
+## Updates
+Based on the PR #24, the following changes have been made to the feature flag system:
+- The configuration files have been updated to reflect the changes in the build/deployment files.
+- The infrastructure has been updated to reflect the changes in the extended event system.
+
+## Instructions for updating the feature flag system
+1. Update the configuration files to reflect the changes in the build/deployment files.
+2. Update the infrastructure to reflect the changes in the extended event system.
+3. Be specific about what changed and provide clear migration steps if needed.
+4. Keep the documentation practical and actionable.
