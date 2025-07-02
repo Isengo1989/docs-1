@@ -89,3 +89,21 @@ This functionality is available starting with Shopware 6.4.3.0.
 :::
 
 **Your contribution is our pride!**
+
+## Updates
+
+### Backward Compatibility
+
+The configuration files have been updated. Please refer to the 'backward-compatibility.md' document for more details.
+
+### Embedding External Repositories
+
+The build/deployment files have been modified. Please refer to the '07-embedding-external-repositories.md' document for more information.
+
+### Feature Flag System
+
+Changes have been made to the configuration files. Please refer to the '2020-08-10-feature-flag-system.md' document for more details.
+
+### Extended Event System
+
+The infrastructure has been updated. Please refer to the '2024-06-18-extended-event-system.md' document for more information.
