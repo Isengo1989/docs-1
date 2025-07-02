@@ -1,3 +1,4 @@
+CURRENT DOCUMENTATION CONTENT:
 ---
 nav:
   title: Override existing Javascript
@@ -131,7 +132,7 @@ To see your changes you have to build the Storefront. Use the following command 
 <Tab title="Template">
 
 ```bash
-./bin/build-storefront.sh
+./bin/watch:frontend.sh
 ```
 
 </Tab>
