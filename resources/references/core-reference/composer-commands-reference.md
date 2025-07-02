@@ -52,7 +52,7 @@ $ composer [command] [parameters]
 |:-------------------------------|:------------------------------------------------------------------------------------------------|
 | `build:js:storefront`          | Builds the Storefront's JavaScript - Includes `bundle:dump`, `feature:dump` and `theme:compile` |
 | `npm:storefront:check-license` | Check third-party dependency licenses for storefront                                            |
-| `watch:storefront`             | Build storefront with hot module reloading                                                      |
+| `watch:frontend`               | Build storefront with hot module reloading                                                      |
 
 ### Testsuite & Development
 
