@@ -177,3 +177,18 @@ readonly class ResolveListingExample implements EventSubscriberInterface
     }
 }
 ```
+
+## Changes in PR #24
+
+In PR #24, we made several changes to the event-based extension system:
+
+1. **Configuration Files:**
+    - We updated the configuration files to reflect the changes in the event-based extension system. This includes changes in the `composer.json` and `package.json` files.
+
+2. **Build/Deployment Files:**
+    - We made changes to the `.github/workflows/visual-tests.yml` file to reflect the changes in the build and deployment process.
+
+3. **Database File:**
+    - We added new measurement settings into the sales channel configuration and domain configuration. This includes the addition of `2025-04-25-add-measurement-settings-into-sales-channel-configuration.md` and `2025-05-05-add-measurement-settings-into-sales-channel-domain-configuration.md` files.
+
+Please refer to the updated documentation and training materials to understand these changes and how to adapt to the new event-based extension system.
