@@ -31,6 +31,8 @@ Another feature worth mentioning is our CMS integration called *Shopping experie
 
 Shopware also has a custom built-in **ORM**, called [Data Abstraction Layer](../concepts/framework/data-abstraction-layer), which offers several features, like e.g., API endpoint generation for your entities. Our rule engine, called [Rule builder](../concepts/framework/rules), is a big feature that lets you create global rules with several conditions, which can be used and applied in several modules to e.g. configure the availability of promotion codes, shipping methods, payment methods or even product prices.
 
+In the latest update, we have added a new feature called `AssociationDescription` flag. This flag is used to provide a description for associations in the API. This is particularly useful when you want to provide more context or information about an association in your API responses.
+
 Last but not least, there is a most important technical feature, which gives you the power to create your custom ideas without touching the Shopware core. Every single feature above can be extended and customized with the help of **Extensions**. Throughout this [Extension system](../concepts/extensions/) one is able to create own [Plugins](../concepts/extensions/plugins-concept), [Themes](../guides/plugins/themes/), or even [Apps](../concepts/extensions/apps-concept), for your Shopware project.
 
 ## Repository structure
