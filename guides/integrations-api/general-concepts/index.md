@@ -33,4 +33,28 @@ Starting with Shopware version 6.4.0.0, we decided to change our API versioning 
 
 <PageRef page="api-versioning" />
 
+## Association Description Flag
+
+With the latest update, we have introduced a new flag called `AssociationDescription`. This flag is used to provide additional information about the associations in the API. This flag can be found in the definition of various entities such as `CustomerDefinition`, `OrderDefinition`, `ProductDefinition`, etc.
+
+<PageRef page="association-description-flag" />
+
+## Store API Schema Generator
+
+We have made significant changes to the OpenAPI schema generator for Store API endpoints. The generator now includes the `AssociationDescription` flag in the generated schema. This allows for a more detailed and accurate representation of the API endpoints.
+
+<PageRef page="store-api-schema-generator" />
+
 These topics provide essential foundations for effective API development and usage in Shopware.
+
+## Release Information
+
+For detailed information about the changes in the latest release, please refer to the `RELEASE_INFO-6.7.md` file.
+
+<PageRef page="release-info-6.7" />
+
+## Backend Documentation
+
+We have updated the backend documentation to include information about the addition of the `AssociationDescription` flag. Please refer to the backend documentation for more details.
+
+<PageRef page="backend-documentation" />
