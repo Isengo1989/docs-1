@@ -5,6 +5,8 @@ nav:
 
 # Shopware Developer Documentation
 
+Test
+
 [![Issues](https://img.shields.io/github/issues/shopware/docs)](https://github.com/shopware/docs/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/shopware/docs)](https://github.com/shopware/docs/pulls)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fdeveloper.shopware.com)](https://developer.shopware.com)
