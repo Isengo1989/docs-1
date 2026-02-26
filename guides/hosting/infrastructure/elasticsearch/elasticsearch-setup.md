@@ -17,11 +17,8 @@ Currently, the implementation for Elasticsearch/Opensearch works in the same way
 
 ## Requirements
 
-* A supported OpenSearch (or Elasticsearch) server
-
-<PageRef page="../../../installation/requirements#recommended-stack-and-supported-versions" />
-
-* [Running message queue workers in the background](../message-queue)
+- [A supported OpenSearch (or Elasticsearch) server](../../../hosting/index.md#recommended-stack-and-supported-versions)
+- [Running message queue workers in the background](../message-queue)
 
 ## Server basics
 
@@ -69,8 +66,8 @@ Data nodes are very resource-intensive, so you definitely want to monitor the re
 
 A shard is a worker unit that holds the data of the index and can be assigned to a node. There are two types of shards:
 
-* **Primary**: A primary shard contains the original data.
-* **Replica**: A replica is a copy of a primary shard.
+- **Primary**: A primary shard contains the original data.
+- **Replica**: A replica is a copy of a primary shard.
 
 The number of replica shards is up to you and the reliability you need in your cluster. The more replica shards you have, the more nodes can fail before the data in the shard becomes unavailable.
 But reliability is not the only usage of a replica shard. Queries like search can be performed on a primary or replica. So if you have replicas of your shards, you can better scale your data and cluster resources.
@@ -90,6 +87,19 @@ Normally a shard in Elasticsearch can hold at least tens of gigabytes, so you mi
 | `SHOPWARE_ES_ENABLED`          | `0` / `1`        | This variable activates the usage of Elasticsearch for your shop                                                                                                                                                                 |
 | `SHOPWARE_ES_INDEX_PREFIX`     | `sw_myshop`      | This variable defines the prefix for the Elasticsearch indices                                                                                                                                                                   |
 | `SHOPWARE_ES_THROW_EXCEPTION`  | `0` / `1`        | This variable activates the debug mode for Elasticsearch. Without this variable as = 0 you will get a fallback to mysql without any error message if Elasticsearch is not working                                                |
+
+:::info
+The `SHOPWARE_ES_INDEXING_ENABLED` and `SHOPWARE_ES_ENABLED` can seem as a duplicate setting, but has it's purpose. Here are two use cases for setting these differently:
+
+## Full Support
+
+`SHOPWARE_ES_ENABLED=1` + `SHOPWARE_ES_INDEXING_ENABLED=1` - Both search and indexing enabled.
+
+## Read-Only
+
+`SHOPWARE_ES_ENABLED=1` + `SHOPWARE_ES_INDEXING_ENABLED=0` - Search enabled, indexing disabled. Could be useful in bigger setups where some AppServers can only read the index but not update it.
+
+:::
 
 ### Example file for productive environments
 
@@ -157,7 +167,7 @@ For additional support with common Elasticsearch errors and more tips please ref
 ### Indexing the whole shop
 
 Sometimes you want to reindex your whole shop, including Elasticsearch, SEO-URLs, product index, and more.
-For a reindex of the whole shop, you can use the command `bin/console dal:refresh:index --use-queue`. Use the `--use-queue` option because you will have too many products to index without the [message queue](/docs/guides/hosting/infrastructure/message-queue) involved.
+For a reindex of the whole shop, you can use the command `bin/console dal:refresh:index --use-queue`. Use the `--use-queue` option because you will have too many products to index without the [message queue](../message-queue) involved.
 
 ### Alias creation
 
@@ -171,10 +181,10 @@ If a messenger process is active, the entries of that table are processed one by
 In case a message runs into an error, it is written into the `dead_messages` table and will be processed again after a specific time frame.
 
 You can start multiple messenger consumer processes by using the command `bin/console messenger:consume` and also add output to the processed messages by adding the parameter `bin/console messenger:consume -vv`.
-In a production environment, you want to deactivate the admin messenger which is started automatically when opening a session in your Administration view by following this [documentation](/docs/guides/plugins/plugins/framework/message-queue/add-message-handler#the-admin-worker).
+In a production environment, you want to deactivate the admin messenger which is started automatically when opening a session in your Administration view by following this [documentation](../../../../guides/hosting/infrastructure/message-queue#admin-worker).
 
 Our experience has shown that up to three worker processes are normal and useful for a production environment.
-If you want more than that, a tool like [RabbitMQ](/docs/guides/hosting/infrastructure/message-queue#transport-rabbitmq-example) to handle the queue is needed so your database will not become a bottleneck.
+If you want more than that, a tool like [RabbitMQ](../message-queue#message-queue-on-production-systems) to handle the queue is needed so your database will not become a bottleneck.
 
 ## Configuration
 

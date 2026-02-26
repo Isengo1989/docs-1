@@ -117,6 +117,8 @@ Include several screenshots and descriptive images from the Storefront and backe
 They must show the app "in action", its configuration options, and how to use it.
 We recommend uploading screenshots showing the mobile and desktop-view.
 
+Only images that represent or show the function of the extension may be used. Advertising for other extensions or services is not permitted.
+
 Link: [How To - Add images and icons to extensions](https://docs.shopware.com/en/account-en/adding-pictures-and-icons/how-to)
 
 ### Link to demoshop
@@ -409,7 +411,7 @@ The following statements will be blocked as of 1st Oct. 2022:
 There are Cypress tests for Shopware 6 on GitHub.
 The project is driven by the *Friends of Shopware* group. You can contribute at any time:
 
-* Link: [Developer Documentation Cypress Tests for Shopware 6](../../../../../guides/plugins/plugins/testing/end-to-end-testing)
+* Link: [Developer Documentation Cypress Tests for Shopware 6](../../../../../guides/plugins/plugins/testing/end-to-end-testing/)
 * Link: [Cypress Tests for Shopware 6](https://github.com/shopware/shopware/tree/trunk/src/Administration/Resources)
 
 ### Useful tool for plugin development and extension management
@@ -431,7 +433,7 @@ Link: [Example of a valid composer.json](https://github.com/FriendsOfShopware/Fr
 
 ### Ensure cross-domain messages are sent to the intended domain
 
-Link: ["Cross-document messaging domains should be carefully restricted"](https://rules.sonarsource.com/javascript/RSPEC-2819)
+When using `postMessage()` or similar cross-window messaging APIs, verify the message origin (e.g. `event.origin`) and restrict target domains to trusted URLs instead of `'*'`. This prevents malicious sites from sending or receiving unauthorized messages.
 
 ### No bootstrapping file found. Expecting bootstrapping in
 

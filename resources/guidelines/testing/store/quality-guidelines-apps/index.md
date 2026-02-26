@@ -116,6 +116,8 @@ Include several screenshots and descriptive images from the Storefront and backe
 They must show the app "in action", its configuration options, and how to use it.
 We recommend uploading screenshots showing the mobile and desktop-view.
 
+Only images that represent or show the function of the extension may be used. Advertising for other extensions or services is not permitted.
+
 [How To - Add images and icons to extensions](https://docs.shopware.com/en/account-en/adding-pictures-and-icons/how-to)
 
 ### Link to demoshop
@@ -390,7 +392,7 @@ For example, "Swag\\MyPlugin\\SwagMyPluginSW6" instead of "Swag\\MyPlugin\\SwagM
 
 ### Ensure cross-domain messages are sent to the intended domain
 
-["Cross-document messaging domains should be carefully restricted"](https://rules.sonarsource.com/javascript/RSPEC-2819)
+When using `postMessage()` or similar cross-window messaging APIs, verify the message origin (e.g. `event.origin`) and restrict target domains to trusted URLs instead of `'*'`. This prevents malicious sites from sending or receiving unauthorized messages.
 
 ### Class Shopware\Storefront\* not found
 

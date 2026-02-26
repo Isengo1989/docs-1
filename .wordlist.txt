@@ -1,3 +1,4 @@
+AAAA
 ACL
 ACLs
 ADDR
@@ -65,6 +66,7 @@ Aplaceholder
 AppRefundHandler
 AppScripts
 AppServer
+AppServers
 AppSystem
 Archlinux
 ArrayFacade
@@ -121,6 +123,7 @@ CHANGELOG
 CKEditor
 CLI
 CMS
+CNAME
 CORS
 CPUs
 CRM
@@ -128,6 +131,7 @@ CSP
 CSPs
 CSRF
 CSV
+CacheClearCommand
 CacheInvalidator
 CacheInvalidatorS
 CachedProductListingRouteTest
@@ -188,8 +192,15 @@ CircleCI
 ClientInterface
 Cloudflare
 Cmd
+CmsElementResolverInterface
 CmsPage
+CmsPageLoadedEvent
+CmsPageLoaderCriteriaEvent
+CmsSlotEntity
+CmsSlotsDataCollectExtension
 CmsSlotsDataEnrichExtension
+CmsSlotsDataResolveExtension
+CmsSlotsDataResolver
 Codemods
 Codespaces
 Codestyle
@@ -226,6 +237,7 @@ CreatedBy
 CreatedByField
 CredentialsBuilder
 CredentialsEntity
+CriteriaCollection
 CriteriaEvent
 CriteriaParser
 CriteriaTest
@@ -235,6 +247,7 @@ CrossSellingDataSet
 Crowdin
 Ctrl
 CurrencyRule
+CursorAI
 CustomAppAware
 CustomAppEvent
 CustomAppStorer
@@ -317,6 +330,7 @@ Dockerfile
 Dockware
 DomainException
 DomainExceptions
+Dotenv
 DynamoDB
 ECDSA
 ENUM
@@ -328,11 +342,13 @@ ESLint
 ESlint
 EcmaScript
 Eine
+ElastiCache
 ElasticSearch
 ElasticsearchDefinition
 ElasticsearchEntityAggregator
 ElasticsearchEntitySearcher
 ElasticsearchProductDefinition
+ElementDataCollection
 EmailAware
 EmailField
 EmailStorer
@@ -380,6 +396,7 @@ FPM
 FQCN
 FastRoute
 Fastly
+Fastly's
 Fastorder
 FieldCollection
 FieldSerializer
@@ -416,6 +433,7 @@ GIFs
 GenericPage
 GenericPageLoader
 GitLab
+Gitbook
 Github
 GlobFileLoader
 GmbH
@@ -525,6 +543,7 @@ LongText
 LongTextField
 Lychee
 MACOSX
+MDN
 MJML
 MRs
 MVC
@@ -579,6 +598,8 @@ MyExtension
 MyPlugin
 MyTestClass
 MyTestInterface
+NATS
+NFS
 NPM
 NUR
 NVDA
@@ -606,6 +627,7 @@ OAuth
 OPENSEARCH
 ORM
 ORMs
+OSS
 OTEL
 OTLP
 ObjectField
@@ -675,6 +697,7 @@ PageLoadedEvent
 PageLoadedEvents
 PageLoader
 PageLoader structs
+PageRef
 PageType
 Pagelet
 PageletLoader
@@ -791,6 +814,7 @@ RepositoryIterator
 ResetUrlAware
 ResetUrlStorer
 ResolveListingExtension
+ResolverContext
 RestAPI
 RestrictDelete
 Reusability
@@ -828,6 +852,7 @@ Sales Rooms
 SalesAgent
 SalesChannel
 SalesChannelAware
+SalesChannelCmsPageLoader
 SalesChannelContext
 SalesChannelContextCreatedEvent
 SalesChannelContextResolvedEvent
@@ -851,6 +876,7 @@ Sendfile
 SeoUrlRoute
 SeoUrlTemplate
 SerializedField
+Serverless
 SetNullOnDelete
 ShippingCountryRule
 ShippingMethodPriceCollector
@@ -904,6 +930,9 @@ Subcommands
 SubjectAware
 SubjectStorer
 Subprocessor
+SubscriptionCartConvertedSubscriber
+SubscriptionOrderPlacedSubscriber
+SubscriptionTransformedSubscriber
 SuggestPage
 SwagAdvDevBundle
 SwagB
@@ -921,6 +950,7 @@ Synopsys
 TCP
 TLS
 TTL
+TTLs
 TaxFreeConfigField
 TaxProvider
 TaxProviderStruct
@@ -987,6 +1017,7 @@ UpdatedBy
 UpdatedByField
 UpperCamelCase
 Upserting
+Upstash
 Upsun
 UrlAware
 UrlStorer
@@ -999,6 +1030,7 @@ VARCHAR
 VCL
 VCS
 VM
+VPC
 VSCode
 Validator
 Valkey
@@ -1009,6 +1041,7 @@ VersionDataPayloadField
 VersionField
 VirtualHosts
 Vite
+VitePress
 Vitepress
 Vitest
 VoiceOver
@@ -1125,6 +1158,7 @@ bottleJS
 bottleJs
 bourgau
 brainer
+breakpoint
 browserslist
 bruteforce
 bugfix
@@ -1132,6 +1166,7 @@ bugfixes
 bundler
 buyable
 cacheKey
+cacheability
 cacheable
 cacheinvalidatorfacade
 cachix
@@ -1185,6 +1220,7 @@ config
 configComponent
 configs
 configurator
+configurators
 confirmUrl
 const
 const's
@@ -1284,6 +1320,7 @@ dom
 don'ts
 dont
 dont's
+dotenv
 dr
 dragTo
 dropdown
@@ -1297,6 +1334,7 @@ editorconfig
 eg
 elasticsearch
 employeeId
+enablement
 english
 enqueue
 entityIds
@@ -1346,6 +1384,7 @@ frankdejonge
 frontend
 frontends
 frontmatter
+fullwidth
 func
 für
 gRPC
@@ -1415,6 +1454,7 @@ hono
 hosters
 hostname
 hotspots
+hreflang
 html
 http
 httpCache
@@ -1484,6 +1524,7 @@ jwks
 jwt
 kebabCase
 keyframes
+landingpage
 lang
 lazysizes
 libxml
@@ -1532,6 +1573,7 @@ memoization
 memoized
 mercure
 mergeWith
+metapackage
 middleware
 middlewares
 minPurchase
@@ -1591,6 +1633,7 @@ openSUSE
 openUserActionMenu
 opensearch
 openssl
+orchestrator
 orderAware
 orderIds
 orderTransaction
@@ -1672,6 +1715,7 @@ psh
 pwa
 px
 py
+pyspelling
 qa
 qa@shopware.com
 qty's
@@ -1716,6 +1760,7 @@ reproducibility
 requestAdminApi
 requestfacade
 resetUrl
+resolver's
 resolvers
 resubmittable
 rethrown
@@ -1749,6 +1794,7 @@ scss
 sdk
 searchMedia
 searchViaAdminApi
+searchability
 secretKey
 selectable
 selectbox
@@ -1759,6 +1805,7 @@ seperate
 seperated
 serializable
 serializer
+serverless
 setFlags
 setLocaleToEnGb
 setProductFixtureVisibility
@@ -1783,6 +1830,7 @@ simplexml
 skipOnFeature
 skipTestIfInActive
 sku
+slotConfig
 slowlog
 sm
 smartbar
@@ -1798,6 +1846,7 @@ stateId
 stateMachineState
 statesfacade
 statusCode
+stderr
 stdin
 stdout
 stemmer
@@ -1821,7 +1870,6 @@ subdirectories
 subdirectory
 subfolder
 suboptimal
-subpaths
 subprocessor
 subprocessors
 supervisord
@@ -1933,11 +1981,13 @@ webpack
 webpackMerge
 webserver
 wednesday
+whatsmydns
 whitespace
 whitespaces
 whoami
 wil
 wishlist
+wordlist
 www
 xasjkyld
 xhost's

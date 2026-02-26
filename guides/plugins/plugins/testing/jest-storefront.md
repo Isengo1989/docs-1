@@ -25,7 +25,7 @@ Before you are reading this guide you have to make sure you understand the basic
 
 In addition, you need a running Shopware 6 installation. Your repository used for that should be based on development template, as we will to use some scripts provided by it.
 
-For one example, we use a Javascript plugin. In oder to follow this example, you need to know how to build a Javascript plugin in the first place. You can learn about it in the corresponding [guide](../storefront/add-custom-javascript).
+For one example, we use a Javascript plugin. In oder to follow this example, you need to know how to build a Javascript plugin in the first place. You can learn about it in the corresponding [guide](../storefront/add-custom-javascript/).
 
 ## Test structure
 
@@ -184,7 +184,7 @@ export default class HelloWorldPlugin extends Plugin {
 }
 ```
 
-Of course, you need to make sure that your plugin is registered, more details in the guide on [Javascript plugins](../storefront/add-custom-javascript).
+Of course, you need to make sure that your plugin is registered, more details in the guide on [Javascript plugins](../storefront/add-custom-javascript/).
 
 In the beginning, writing plugin tests is still similar to other jest unit tests: You import your plugin's class and use the familiar test structure:
 
@@ -355,7 +355,7 @@ describe('HelloWorldPlugin tests', () => {
 });
 ```
 
-Afterwards, we can add more tests as we want to. To give an example, it's useful to rest if our plugin returns the "Hello World" test as expected:
+Afterwards, we can add more tests as we want to. To give an example, it's useful to test if our plugin returns the "Hello World" test as expected:
 
 ```javascript
 // <plugin root>/src/Resources/app/storefront/test/plugin/hello-world/hello-world.plugin.test.js
@@ -412,5 +412,5 @@ describe('HelloWorldPlugin tests', () => {
 
 ## More interesting topics
 
-* [PHPUnit tests](php-unit)
-* [End-to-end tests](end-to-end-testing)
+* [PHPUnit tests](php-unit/)
+* [End-to-end tests](end-to-end-testing/)
