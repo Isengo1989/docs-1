@@ -27,3 +27,4 @@ spellcheck-local: ## Runs the spellcheck tool locally (requires aspell and pyspe
 fix: ## Runs the linting tool and fixes simple mistakes
 	docker run --rm -u ${user} -v "$(shell pwd):/docs" -e INPUT_FIX=true -e INPUT_IGNORE=${ignored} avtodev/markdown-lint:v1.5 \
 	    --config /docs/markdown-style-config.yml /docs
+
