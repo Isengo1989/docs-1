@@ -3,7 +3,7 @@
 # - Similarity search results
 # - Affected documentation lists
 # - Documentation update PRs
-# - PR comment mentions test
+# - PR comment mentions
 
 # Ignore README files at any level
 README.md
