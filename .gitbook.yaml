@@ -1,3 +1,4 @@
+
 redirects:
     guides/hosting/configurations/shopware/staging.html: guides/hosting/installation-updates/creating-a-staging-instance.html
     developers-guide/plugin-guidelines/: https://developers.shopware.com/developers-guide/plugin-guidelines/
